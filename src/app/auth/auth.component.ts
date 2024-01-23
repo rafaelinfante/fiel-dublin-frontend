@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-auth',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: './auth.component.html',
+  styleUrl: './auth.component.scss',
 })
-export class AppComponent {}
+export class AuthComponent {}

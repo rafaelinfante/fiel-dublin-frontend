@@ -1,0 +1,18 @@
+{
+  "LANGUAGE": "en",
+
+  "auth": {
+    "SIGNIN": "Sign In",
+    "EMAIL_ADDRESS": "Email Address",
+    "PASSWORD": "Password",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "REMEMBER_ME": "Remember me",
+    "OR": "or",
+    "SIGNIN_WITH": "Sign In with"
+  },
+  "backoffice": {
+    "HOME": "Home",
+    "FEATURES": "Features",
+    "CONTACT": "Contact"
+  }
+}

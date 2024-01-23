@@ -1,0 +1,18 @@
+{
+  "LANGUAGE": "pt",
+
+  "auth": {
+    "SIGNIN": "Entrar",
+    "EMAIL_ADDRESS": "Endereço de Email",
+    "PASSWORD": "Senha",
+    "FORGOT_PASSWORD": "Esqueceu a senha?",
+    "REMEMBER_ME": "Lembrar-me",
+    "OR": "ou",
+    "SIGNIN_WITH": "Entrar com"
+  },
+  "backoffice": {
+    "HOME": "Início",
+    "FEATURES": "Recursos",
+    "CONTACT": "Contato"
+  }
+}

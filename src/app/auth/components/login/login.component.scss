@@ -1,0 +1,73 @@
+.form-signin {
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type='email'] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type='password'] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card {
+  border-radius: 8px;
+  -webkit-box-shadow:
+    0 0 5px 0 rgba(43, 43, 43, 0.1),
+    0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  box-shadow:
+    0 0 5px 0 rgba(43, 43, 43, 0.1),
+    0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 25px 0;
+}
+
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 5;
+  height: 1px;
+}
+
+.or-label {
+  flex-grow: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.form-control:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem black;
+}
+
+input[type='checkbox']:focus,
+input[type='checkbox']:active,
+.uneditable-input:focus {
+  border-color: black;
+  outline: 0 none;
+  box-shadow: 0 0 0 0.1rem black;
+}
+
+input[type='checkbox']:checked {
+  background-color: black;
+  border-color: black;
+}

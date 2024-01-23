@@ -77,14 +77,17 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "fiel-dublin-frontend:build:production"
+            "local": {
+              "buildTarget": "fiel-dublin-frontend:build:local"
             },
-            "development": {
-              "buildTarget": "fiel-dublin-frontend:build:development"
+            "dev": {
+              "buildTarget": "fiel-dublin-frontend:build:dev"
+            },
+            "prod": {
+              "buildTarget": "fiel-dublin-frontend:build:prod"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "local"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
