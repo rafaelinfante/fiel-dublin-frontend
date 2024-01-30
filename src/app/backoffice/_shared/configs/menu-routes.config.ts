@@ -1,4 +1,4 @@
-import {RouteInfo} from '../interfaces/backoffice-interfaces';
+import { RouteInfo } from '../interfaces/backoffice-interfaces';
 
 export const MENU_ROUTES: RouteInfo[] = [
   {

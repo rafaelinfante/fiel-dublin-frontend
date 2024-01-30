@@ -19,7 +19,7 @@
         @for (menuRoute of menuRoutes; track menuRoute.path) {
           <li class="nav-item">
             <a class="nav-link" routerLinkActive="active" [routerLink]="menuRoute.path">
-              <i class="{{menuRoute.icon}}"></i> {{ menuRoute.title | translate }}
+              <i class="{{ menuRoute.icon }}"></i> {{ menuRoute.title | translate }}
             </a>
           </li>
         }
