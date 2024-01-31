@@ -5,7 +5,7 @@
     <app-language></app-language>
   </div>
 
-  <form [formGroup]="loginForm" (ngSubmit)="login()">
+  <form [formGroup]="loginForm">
     <img class="mb-4" src="assets/images/corinthians.png" alt="" height="87" />
     <h1 class="h3 mb-3">{{ 'auth.SIGNIN' | translate }}</h1>
 
@@ -26,14 +26,14 @@
         <a href="">{{ 'auth.FORGOT_PASSWORD' | translate }}</a>
       </div>
     </div>
-    <button class="btn btn-dark w-100 py-2" type="submit">{{ 'auth.SIGNIN' | translate }}</button>
+    <button class="btn btn-dark w-100 py-2" (click)="login()">{{ 'auth.SIGNIN' | translate }}</button>
     <div class="or-container">
       <div class="line-separator"></div>
       <div class="or-label">{{ 'auth.OR' | translate }}</div>
       <div class="line-separator"></div>
     </div>
     @for (signInOption of signInProviders; track signInOption.provider) {
-      <button class="btn btn-lg btn-light btn-block btn-outline d-flex align-items-center w-100 py-2 my-2">
+      <button (click)="oauth2()" class="btn btn-lg btn-light btn-block btn-outline d-flex align-items-center w-100 py-2 my-2">
         <i class="{{ signInOption.icon }}"></i>
         <span class="flex-grow-1 text-center">{{ 'auth.SIGNIN_WITH' | translate }} {{ signInOption.provider }}</span>
       </button>

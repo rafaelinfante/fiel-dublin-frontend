@@ -5,6 +5,7 @@ export const SIGNIN_PROVIDERS: SignInProviders[] = [
     provider: 'Google',
     icon: 'bi bi-google',
   },
+  /*
   {
     provider: 'Apple',
     icon: 'bi bi-apple',
@@ -21,4 +22,5 @@ export const SIGNIN_PROVIDERS: SignInProviders[] = [
     provider: 'LinkedIn',
     icon: 'bi bi-linkedin',
   },
+   */
 ];

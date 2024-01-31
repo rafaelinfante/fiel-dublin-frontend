@@ -44,7 +44,6 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.submitted = true;
-
     /*    if (this.loginForm.invalid) {
       return;
     }*/
@@ -62,14 +61,27 @@ export class LoginComponent implements OnInit {
       .pipe(first())
       .subscribe({
         next: (response: HttpHeaderResponse) => {
-          console.log('next');
-          console.log(response);
-          console.log(response.headers.get('Authorization'));
-
           this.storageService.setItem('jwt-token', response.headers.get('Authorization') as string);
+          this.storageService.setItem('is-loggedIn', 'true');
           this.router.navigateByUrl('/backoffice/home');
         },
         error: (errorResponse: RestErrorResponse) => {
+          console.log('error');
+          console.log(errorResponse);
+        },
+      });
+  }
+
+  oauth2() {
+    this.authService
+      .oauth2()
+      .pipe(first())
+      .subscribe({
+        next: (response: any) => {
+          console.log('next');
+          console.log(response);
+        },
+        error: (errorResponse: any) => {
           console.log('error');
           console.log(errorResponse);
         },
